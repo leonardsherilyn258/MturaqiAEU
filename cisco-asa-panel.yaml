@@ -1,7 +1,6 @@
 id: cisco-asa-panel-detect
 
 info:
-  name: Cisco ASA VPN panel detect
   author: organiccrap
   severity: info
   tags: cisco,panel
@@ -15,7 +14,6 @@ requests:
     max-redirects: 2
     matchers:
       - type: word
-        part: body
         words:
           - "/+CSCOU+/portal.css"
           - "SSL VPN Service"
